@@ -60,7 +60,7 @@ public class x0 {
         int moves = 1;
         boolean condition = (l > 0 && l < 4) && (c > 0 && c < 4);
         Winner();
-        while (moves<=8 && condition){
+        while (moves<=8 && condition && Winner() == null){
             Winner();
             if (moves % 2 == 1 && mat[l][c].equals("_")) {
                 mat[l][c] = "X";
